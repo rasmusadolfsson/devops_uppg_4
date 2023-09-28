@@ -25,3 +25,35 @@ jobs:
       uses: gradle/gradle-build-action@bd5760595778326ba7f1441bcf7e88b49de61a25 # v2.6.0
       with:
         arguments: build
+
+
+
+name: CI
+
+on: [push]
+
+jobs:
+  unit-tests:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+      
+    - name: Run Unit Tests
+      run: |
+        echo "Running Unit Tests..."
+        # Replace with actual commands to run unit tests
+
+  integration-tests:
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/master'  # This job will only run for pushes to master
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+      
+    - name: Run Integration Tests
+      run: |
+        echo "Running Integration Tests..."
+        # Replace with actual commands to run integration tests
