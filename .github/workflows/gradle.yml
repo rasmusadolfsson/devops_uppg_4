@@ -27,6 +27,6 @@ jobs:
     - name: Run Unit Tests
       run: |
         echo "Running Unit Tests..."
-        gradle test --tests 'DevopsUppg3ApplicationTests.java'
-        gradle test --tests 'TodoControllerTest.java'
-        gradle test --tests 'TodoServiceTest.java'
+        gradle test --tests 'com.example.devops_uppg_3.DevopsUppg3ApplicationTests'
+        gradle test --tests 'com.example.devops_uppg_3.TodoControllerTest'
+        gradle test --tests 'com.example.devops_uppg_3.TodoServiceTest'
