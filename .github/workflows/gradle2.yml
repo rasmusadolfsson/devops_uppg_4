@@ -25,7 +25,7 @@ jobs:
         arguments: build -x test
 
     - name: Start jar
-      run: java -jar build/libs/devops_uppg_3-0.0.1-SNAPSHOT.jar
+      run: java -jar build/libs/devops_uppg_3-0.0.1-SNAPSHOT.jar &
         
     - name: Run Test Job 1
       run: |
