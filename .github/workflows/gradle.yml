@@ -35,7 +35,7 @@ jobs:
     
     steps:
     - name: Run Test Job 1
-      working-directory: gradle/wrapper
+      working-directory: ${{ github.workspace }}
       run: |
         echo "Running Test Job 1..."
         ./gradlew test --tests 'com.example.devops_uppg_3.DevopsUppg3ApplicationTests'
