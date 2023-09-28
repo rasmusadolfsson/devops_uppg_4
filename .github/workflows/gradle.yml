@@ -37,7 +37,7 @@ jobs:
     
     steps:
     - name: Check out code
-    - uses: actions/checkout@v4
+      uses: actions/checkout@v4
     
     - name: Run Test Job 1
       run: |
@@ -50,7 +50,7 @@ jobs:
     
     steps:
     - name: Check out code
-    - uses: actions/checkout@v4
+      uses: actions/checkout@v4
     
     - name: Run Test Job 2
       run: |
@@ -63,7 +63,7 @@ jobs:
     
     steps:
     - name: Check out code
-    - uses: actions/checkout@v4
+      uses: actions/checkout@v4
     
     - name: Run Test Job 3
       run: |
