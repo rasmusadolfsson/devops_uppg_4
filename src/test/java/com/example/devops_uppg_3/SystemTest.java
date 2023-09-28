@@ -14,7 +14,6 @@ public class SystemTest {
         RestAssured.baseURI = "http://localhost:8080";
     }
 
-//test
 
     @Test
     void getListTest_ShouldReturn200AndList() {
