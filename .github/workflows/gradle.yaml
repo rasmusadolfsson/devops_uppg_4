@@ -30,7 +30,6 @@ jobs:
 
   test-job1:
     runs-on: ubuntu-latest
-    needs: unit-tests
 
     steps:
       - name: Run Test Job 1
@@ -40,7 +39,7 @@ jobs:
 
   test-job2:
     runs-on: ubuntu-latest
-    needs: unit-tests
+    needs: test-job1
 
     steps:
       - name: Run Test Job 2
@@ -50,7 +49,7 @@ jobs:
 
   test-job3:
     runs-on: ubuntu-latest
-    needs: unit-tests
+    needs: test-job2
 
     steps:
       - name: Run Test Job 3
