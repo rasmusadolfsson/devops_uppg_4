@@ -6,9 +6,6 @@ on:
   pull_request:
     branches: [ "branch_1"]
 
-permissions:
-  contents: read
-
 jobs:        
   unit-tests:
     runs-on: ubuntu-latest
