@@ -38,7 +38,8 @@ jobs:
     steps:
     - name: Check out code
       uses: actions/checkout@v4
-    
+    - name: Make Gradle Wrapper script executable
+      run: chmod +x ./gradlew
     - name: Run Test Job 1
       run: |
         echo "Running Test Job 1..."
@@ -51,7 +52,8 @@ jobs:
     steps:
     - name: Check out code
       uses: actions/checkout@v4
-    
+    - name: Make Gradle Wrapper script executable
+      run: chmod +x ./gradlew
     - name: Run Test Job 2
       run: |
         echo "Running Test Job 2..."
@@ -64,7 +66,8 @@ jobs:
     steps:
     - name: Check out code
       uses: actions/checkout@v4
-    
+    - name: Make Gradle Wrapper script executable
+      run: chmod +x ./gradlew
     - name: Run Test Job 3
       run: |
         echo "Running Test Job 3..."
