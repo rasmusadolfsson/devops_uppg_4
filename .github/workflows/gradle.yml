@@ -18,6 +18,10 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
 
+    - name: Clear Gradle Cache
+      run: |
+        rm -rf $HOME/.gradle/caches/
+
     - name: Make Gradle Wrapper script executable
       run: chmod +x ./gradlew
     - name: Build with Gradle
