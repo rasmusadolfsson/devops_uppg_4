@@ -47,7 +47,7 @@ jobs:
       - name: Run Test Job 2
         run: |
           echo "Running Test Job 2..."
-          ./gradlew test --tests 'com.example.devops_uppg_3.TodoControllerTest'
+          ./gradlew test --tests com.example.devops_uppg_3.TodoControllerTest
 
   test-job3:
     runs-on: ubuntu-latest
@@ -57,4 +57,4 @@ jobs:
       - name: Run Test Job 3
         run: |
           echo "Running Test Job 3..."
-          ./gradlew test --tests 'com.example.devops_uppg_3.TodoServiceTest'
+          ./gradlew test --tests com.example.devops_uppg_3.TodoServiceTest
