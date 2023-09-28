@@ -15,6 +15,13 @@ jobs:
     
     steps:
     - uses: actions/checkout@v4
+#debug?
+    - name: List Directory and Check Bash
+      run: |
+        ls -la
+        ls /usr/bin/bash
+        ./gradlew --version
+
     - name: Set up JDK 17
       uses: actions/setup-java@v3
       with:
