@@ -27,7 +27,7 @@ jobs:
         arguments: build -x test
         
 
-  contextLoads:
+  test-environment:
     runs-on: ubuntu-latest
     needs: build
     
