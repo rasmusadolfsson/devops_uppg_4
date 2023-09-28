@@ -36,6 +36,9 @@ jobs:
     needs: unit-tests
     
     steps:
+    - name: Check out code
+    - uses: actions/checkout@v4
+    
     - name: Run Test Job 1
       run: |
         echo "Running Test Job 1..."
@@ -46,6 +49,9 @@ jobs:
     needs: [unit-tests, test-job1]
     
     steps:
+    - name: Check out code
+    - uses: actions/checkout@v4
+    
     - name: Run Test Job 2
       run: |
         echo "Running Test Job 2..."
@@ -56,6 +62,9 @@ jobs:
     needs: [unit-tests, test-job2]
     
     steps:
+    - name: Check out code
+    - uses: actions/checkout@v4
+    
     - name: Run Test Job 3
       run: |
         echo "Running Test Job 3..."
