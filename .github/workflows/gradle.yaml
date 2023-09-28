@@ -30,7 +30,7 @@ jobs:
 
   test-job1:
     runs-on: ubuntu-latest
-
+    needs: unit-tests
     steps:
       - name: Run Test Job 1
         run: |
