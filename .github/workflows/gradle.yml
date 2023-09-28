@@ -20,13 +20,36 @@ jobs:
     - name: Make Gradle Wrapper script executable
       run: chmod +x ./gradlew
     - name: Build with Gradle
-      uses: gradle/gradle-build-action@bd5760595778326ba7f1441bcf7e88b49de61a25 # v2.6.0
+      uses: gradle/gradle-build-action@v2
       with:
         arguments: build
-        
-    - name: Run Unit Tests
+
+  test-job1:
+    runs-on: ubuntu-latest
+    needs: unit-tests
+    
+    steps:
+    - name: Run Test Job 1
       run: |
-        echo "Running Unit Tests..."
-        gradle test --tests 'com.example.devops_uppg_3.DevopsUppg3ApplicationTests'
-        gradle test --tests 'com.example.devops_uppg_3.TodoControllerTest'
-        gradle test --tests 'com.example.devops_uppg_3.TodoServiceTest'
+        echo "Running Test Job 1..."
+        ./gradlew test --tests 'com.example.devops_uppg_3.DevopsUppg3ApplicationTests'
+
+  test-job2:
+    runs-on: ubuntu-latest
+    needs: unit-tests
+    
+    steps:
+    - name: Run Test Job 2
+      run: |
+        echo "Running Test Job 2..."
+        ./gradlew test --tests 'com.example.devops_uppg_3.TodoControllerTest'
+
+  test-job3:
+    runs-on: ubuntu-latest
+    needs: unit-tests
+    
+    steps:
+    - name: Run Test Job 3
+      run: |
+        echo "Running Test Job 3..."
+        ./gradlew test --tests 'com.example.devops_uppg_3.TodoServiceTest'
