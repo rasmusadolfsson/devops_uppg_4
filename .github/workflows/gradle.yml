@@ -17,6 +17,10 @@ jobs:
         with:
           java-version: '17'
           distribution: 'temurin'
+      - name: Start Spring Boot Web App
+        working-directory: gradle/wrapper
+        run: |
+          java -jar gradle-wrapper.jar
 
       - name: Make Gradle Wrapper script executable
         run: chmod +x ./gradlew
