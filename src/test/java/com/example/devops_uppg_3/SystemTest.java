@@ -8,7 +8,7 @@ import static io.restassured.RestAssured.given;
 import static org.hamcrest.core.IsEqual.equalTo;
 
 public class SystemTest {
-/*
+
     @BeforeEach
     void setUp() {
         RestAssured.baseURI = "http://localhost:8080";
@@ -97,6 +97,5 @@ public class SystemTest {
                 then().
                 statusCode(200);
     }
-
- */
+    
 }
