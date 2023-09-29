@@ -80,4 +80,4 @@ jobs:
     steps:
         - name: echo deploy
           run: |
-            echo "Deploying image..."
+            echo "Deploying ghcr.io/emmavainio/devops_uppg_3:branch_1"
