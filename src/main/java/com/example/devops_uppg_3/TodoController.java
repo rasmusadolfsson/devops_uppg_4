@@ -18,7 +18,6 @@ public class TodoController {
         todoService.addTask(task);
         return ResponseEntity.ok("Task added!");
     }
-    //combine the two above methods into one
 
     @PostMapping("/modify")
     public ResponseEntity<String> modifyTask(String task, int index) {
@@ -41,6 +40,4 @@ public class TodoController {
     public void emptyList() {
         todoService.emptyList();
     }
-
-
 }
