@@ -44,7 +44,7 @@ jobs:
     - name: Run Test Job 1
       run: |
         echo "Running contextLoads..."
-        ./gradlew test --tests 'com.example.devops_uppg_4.DevopsUppg3ApplicationTests'
+        ./gradlew test --tests 'com.example.devops_uppg_3.DevopsUppg3ApplicationTests'
 
   unit-test:
     runs-on: ubuntu-latest
@@ -63,7 +63,7 @@ jobs:
     - name: Run Test Job 2
       run: |
         echo "Running unit tests..."
-        ./gradlew test --tests 'com.example.devops_uppg_4.TodoServiceTest'
+        ./gradlew test --tests 'com.example.devops_uppg_3.TodoServiceTest'
 
   integration-test:
     runs-on: ubuntu-latest
@@ -82,4 +82,4 @@ jobs:
     - name: Run Test Job 3
       run: |
         echo "Running integration tests..."
-        ./gradlew test --tests 'com.example.devops_uppg_4.TodoControllerTest'
+        ./gradlew test --tests 'com.example.devops_uppg_3.TodoControllerTest'
