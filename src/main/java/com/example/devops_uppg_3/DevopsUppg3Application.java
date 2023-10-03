@@ -10,4 +10,7 @@ public class DevopsUppg3Application {
 		SpringApplication.run(DevopsUppg3Application.class, args);
 	}
 
+
+	// NY FEATURE
+
 }
