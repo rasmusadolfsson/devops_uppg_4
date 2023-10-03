@@ -30,7 +30,7 @@ jobs:
     - name: Run Test Job 1
       run: |
         echo "Running System Test..."
-        ./gradlew test --tests 'com.example.devops_uppg_4.SystemTest'
+        ./gradlew test --tests 'com.example.devops_uppg_3.SystemTest'
 
 
   build-push-image:
