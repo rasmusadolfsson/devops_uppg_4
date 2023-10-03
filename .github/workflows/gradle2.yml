@@ -30,7 +30,7 @@ jobs:
     - name: Run Test Job 1
       run: |
         echo "Running System Test..."
-        ./gradlew test --tests 'com.example.devops_uppg_3.SystemTest'
+        ./gradlew test --tests 'com.example.devops_uppg_4.SystemTest'
 
 
   build-push-image:
@@ -82,4 +82,4 @@ jobs:
     steps:
         - name: echo deploy
           run: |
-            echo "Deploying ghcr.io/emmavainio/devops_uppg_3:branch_1"
+            echo "Deploying ghcr.io/rasmusadolfsson/devops_uppg_4:branch_1"
