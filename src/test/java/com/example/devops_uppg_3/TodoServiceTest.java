@@ -11,7 +11,7 @@ public class TodoServiceTest {
 
     @Test
     public void addTaskTest_ShouldAddTask() {
-        todoService.addTask("testt");
+        todoService.addTask("test");
         Assertions.assertEquals(todoService.listTasks().get(0), "test");
     }
 
